@@ -3280,16 +3280,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 53.34) (xy 167.64 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "319c1f6c-665a-4a4b-8296-98fe14cab1ce")
-	)
-	(wire
-		(pts
 			(xy 66.04 80.01) (xy 72.39 80.01)
 		)
 		(stroke
@@ -3397,6 +3387,16 @@
 			(type default)
 		)
 		(uuid "5391525a-bead-4bdb-a222-c87c56681872")
+	)
+	(wire
+		(pts
+			(xy 163.83 53.34) (xy 167.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55d0822a-2579-4d45-8524-ddec0b2d1970")
 	)
 	(wire
 		(pts
@@ -4002,6 +4002,30 @@
 			)
 		)
 	)
+	(global_label "BUZZ2"
+		(shape input)
+		(at 156.21 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "020a330c-69cf-42e5-960b-e3834bef9b90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.9958 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "TX"
 		(shape input)
 		(at 166.37 67.31 180)
@@ -4122,7 +4146,7 @@
 			)
 		)
 	)
-	(global_label "BUZZ"
+	(global_label "BUZZ2"
 		(shape input)
 		(at 74.93 38.1 0)
 		(fields_autoplaced yes)
@@ -4134,7 +4158,7 @@
 		)
 		(uuid "3cf4d6bb-792d-4cb3-b79d-417f4979ea5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.9347 38.1 0)
+			(at 84.1442 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4191,6 +4215,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "BUZZ"
+		(shape input)
+		(at 74.93 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4680c0b2-268d-4d3e-b13b-497ffbbb31f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.9347 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4556,7 +4604,7 @@
 	)
 	(global_label "FRONT_LED"
 		(shape input)
-		(at 74.93 35.56 0)
+		(at 74.93 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4566,7 +4614,7 @@
 		)
 		(uuid "cd5a6119-c5ce-4d51-9990-305a9609ad0f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.3171 35.56 0)
+			(at 88.3171 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7573,6 +7621,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 160.02 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "79ceecd0-5939-4bb8-96b9-35c69c87a9c3")
+		(property "Reference" "R28"
+			(at 161.544 55.372 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100"
+			(at 162.052 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 160.02 55.118 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e0b78128-6ab3-493d-81cf-ddea4a251969")
+		)
+		(pin "1"
+			(uuid "e5b63236-3d64-44b7-b625-8461b744e1bb")
+		)
+		(instances
+			(project "pyropen"
+				(path "/3064dcfd-3f6b-4110-b282-8b370e19b43b"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_45deg")
 		(at 93.98 82.55 180)
 		(unit 1)
@@ -10469,83 +10598,6 @@
 			(project "pyropen"
 				(path "/3064dcfd-3f6b-4110-b282-8b370e19b43b"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 166.37 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d6a7cbba-bea4-493e-9fd9-9fb1f5c6e956")
-		(property "Reference" "#PWR0102"
-			(at 166.37 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 166.37 57.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ba0273fd-b284-4917-8bae-37b39e812414")
-		)
-		(instances
-			(project "pyropen"
-				(path "/3064dcfd-3f6b-4110-b282-8b370e19b43b"
-					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
